@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>InfoCidade</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- PESQUISA -->
+    <div class="pesquisa">
+
+        <button id="botaoBusca" onclick="abrirBusca()">
+            <i data-lucide="search"></i>
+        </button>
+
+        <input
+            id="cidade"
+            placeholder="Digite uma cidade"
+            onkeydown="teclaEnter(event)"
+        >
+
+    </div>
+
+
+    <!-- CARDS -->
+    <div class="container-cards">
+
+        <!-- CARD CLIMA -->
+        <div id="clima" class="cardClima">
+
+            <div class="clima-inicial">
+
+                <i data-lucide="sun" class="icone-clima"></i>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD NOTÍCIAS -->
+        <div id="noticias" class="card-noticias">
+
+            <div class="titulo-noticias">
+
+                <img
+                    src="imagens/noticias.svg"
+                    class="icone-noticias"
+                >
+
+                <h2>Notícias</h2>
+
+            </div>
+
+            <div class="noticias-lista">
+
+                <!-- As notícias serão colocadas aqui pelo JavaScript -->
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- LUCIDE -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
