@@ -400,7 +400,7 @@ async function buscarCidade() {
 
         const urlNoticia =
 
-            `https://gnews.io/api/v4/search?q=${encodeURIComponent(nomeCidade)}&lang=pt&max=3&apikey=787e717164c0ef27d5fb107b205bb692`;
+            `https://gnews.io/api/v4/search?q=${encodeURIComponent(nomeCidade)}&lang=pt&max=3&apikey={API_KEY}`;
 
 
         const respostaNoticia =
